@@ -22,7 +22,7 @@ const experience = [
 </script>
 
 <template>
-    <section id="experiencia" class="py-20 bg-dark">
+    <section id="experiencia" class="relative z-10 bg-dark py-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div class="mb-12 text-center md:text-left">

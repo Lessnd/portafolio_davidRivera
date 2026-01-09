@@ -1,43 +1,51 @@
 <script setup>
+// Importamos los iconos directamente como componentes
+import {
+    Code2, FileCode2, Zap, Palette,
+    Layers, Database, Route, Box,
+    Network, Server, Lock, Cloud,
+    CheckCircle2, Figma, GitBranch, ClipboardCheck
+} from 'lucide-vue-next';
+
 const skillCategories = [
     {
         title: "Núcleo Frontend",
-        icon: "bi-code-square", // Icono de Bootstrap
+        icon: Code2, // Icono de la categoría
         tools: [
-            { name: "Vue 3", icon: "devicon-vuejs-plain" },
-            { name: "TypeScript", icon: "devicon-typescript-plain" },
-            { name: "Vite", icon: "devicon-vitejs-plain" }, // A veces es 'devicon-vite-original' o 'plain'
-            { name: "Tailwind", icon: "devicon-tailwindcss-original" }
+            { name: "Vue 3", icon: Code2 }, // Vue no tiene icono en Lucide (es marca), usamos Code2 o similar
+            { name: "TypeScript", icon: FileCode2 },
+            { name: "Vite", icon: Zap },
+            { name: "Tailwind", icon: Palette }
         ],
         concepts: ["Composition API", "Script Setup", "Strict Typing", "Atomic Design"]
     },
     {
         title: "Arquitectura & Estado",
-        icon: "bi-layers",
+        icon: Layers,
         tools: [
-            { name: "Pinia", icon: "bi-database" }, // Pinia a veces no tiene icono en packs viejos, usamos fallback
-            { name: "Vue Router", icon: "bi-signpost-split" },
-            { name: "Composables", icon: "bi-puzzle" }
+            { name: "Pinia", icon: Database }, // Pinia (Store) -> Database
+            { name: "Vue Router", icon: Route },
+            { name: "Composables", icon: Box }
         ],
         concepts: ["Feature-based Structure", "Global Stores", "Route Guards", "Logic Reusability"]
     },
     {
         title: "Comunicación & API",
-        icon: "bi-hdd-network",
+        icon: Network,
         tools: [
-            { name: "Axios", icon: "devicon-axios-plain" }, // O fallback visual
-            { name: "REST API", icon: "bi-cloud-arrow-down" },
-            { name: "JWT Auth", icon: "bi-shield-lock" }
+            { name: "Axios", icon: Cloud },
+            { name: "REST API", icon: Server },
+            { name: "JWT Auth", icon: Lock }
         ],
         concepts: ["Interceptores HTTP", "Centralized Error Handling", "Loading States", "Token Management"]
     },
     {
         title: "Calidad & UI",
-        icon: "bi-check-circle",
+        icon: CheckCircle2,
         tools: [
-            { name: "Vitest", icon: "devicon-vitest-plain" },
-            { name: "Figma", icon: "devicon-figma-plain" },
-            { name: "Git", icon: "devicon-git-plain" }
+            { name: "Vitest", icon: ClipboardCheck },
+            { name: "Figma", icon: Figma }, // Lucide SI tiene icono de Figma
+            { name: "Git", icon: GitBranch } // Y de Git
         ],
         concepts: ["Unit Testing", "Pixel Perfect", "Interactive States", "Empty States UX"]
     }
@@ -45,41 +53,37 @@ const skillCategories = [
 </script>
 
 <template>
-    <section id="habilidades" class="py-20 bg-dark relative overflow-hidden">
+    <section id="habilidades" class="py-16 md:py-20 bg-dark relative overflow-hidden">
         <div
             class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/5 via-dark to-dark pointer-events-none">
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-            <div class="mb-16 text-center">
+            <div class="mb-12 md:mb-16 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
-                    <span class="text-primary">03.</span> Stack Tecnológico
+                    <span class="text-primary">03.</span> Stack Técnico
                 </h2>
-                <p class="text-slate-400 max-w-2xl mx-auto">
-                    No solo uso herramientas, diseño arquitecturas escalables enfocadas en mantenibilidad y experiencia
-                    de usuario.
+                <p class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base">
+                    Arquitecturas escalables, código limpio y herramientas modernas.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 <div v-for="(category, index) in skillCategories" :key="index"
-                    class="bg-card border border-white/5 rounded-xl p-6 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 group">
+                    class="bg-card border border-white/5 rounded-xl p-5 md:p-6 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 group">
 
                     <div class="flex items-center gap-3 mb-6">
                         <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                            <i :class="['bi text-xl', category.icon]"></i>
+                            <component :is="category.icon" :size="24" />
                         </div>
                         <h3 class="text-xl font-bold text-white">{{ category.title }}</h3>
                     </div>
 
                     <div class="flex flex-wrap gap-6 mb-6">
                         <div v-for="tool in category.tools" :key="tool.name" class="flex flex-col items-center gap-2">
-                            <i v-if="tool.icon.includes('devicon')"
-                                :class="[tool.icon, 'text-3xl text-slate-400 group-hover:text-white transition-colors']"></i>
-                            <i v-else
-                                :class="['bi', tool.icon, 'text-3xl text-slate-400 group-hover:text-white transition-colors']"></i>
-
+                            <component :is="tool.icon" :size="32" stroke-width="1.5"
+                                class="text-slate-400 group-hover:text-white transition-colors" />
                             <span class="text-xs text-slate-500 font-medium">{{ tool.name }}</span>
                         </div>
                     </div>

@@ -1,13 +1,9 @@
 <script setup>
 import { ref } from 'vue';
+import { Menu, X } from 'lucide-vue-next'; // Importamos iconos de menú
 
-// Variable reactiva para controlar si el menú móvil está abierto o cerrado
 const isOpen = ref(false);
-
-// Función para alternar el menú
-const toggleMenu = () => {
-    isOpen.value = !isOpen.value;
-};
+const toggleMenu = () => isOpen.value = !isOpen.value;
 </script>
 
 <template>
@@ -37,7 +33,8 @@ const toggleMenu = () => {
                 <div class="-mr-2 flex md:hidden">
                     <button @click="toggleMenu" type="button"
                         class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none transition-colors">
-                        <i class="bi text-2xl" :class="isOpen ? 'bi-x-lg' : 'bi-list'"></i>
+                        <Menu v-if="!isOpen" :size="28" />
+                        <X v-else :size="28" />
                     </button>
                 </div>
             </div>

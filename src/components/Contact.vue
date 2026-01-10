@@ -11,14 +11,6 @@ const contactInfo = [
         color: 'text-primary'
     },
     {
-        icon: Phone,
-        title: 'Llámame',
-        value: '+503 7470 7208',
-        link: 'tel:+50374707208',
-        action: 'Llamar',
-        color: 'text-green-400'
-    },
-    {
         icon: Linkedin,
         title: 'LinkedIn',
         value: 'David Rivera',

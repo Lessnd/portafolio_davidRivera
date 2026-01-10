@@ -1,14 +1,26 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
   build: {
-    cssCodeSplit: true, // Asegura que el CSS se divida
+    // Minificación agresiva
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true, // Borra los console.log en producción
+        drop_debugger: true
+      }
+    },
     rollupOptions: {
       output: {
-        manualChunks: undefined // Deja que Vite decida
+        // Dividir librerías grandes en archivos separados (Vendor Chunking)
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            // Separa Vue y otras librerías del código principal
+            return 'vendor';
+          }
+        }
       }
     }
   }

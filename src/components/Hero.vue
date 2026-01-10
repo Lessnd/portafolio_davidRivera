@@ -56,7 +56,7 @@ onUnmounted(() => {
                 </div>
 
                 <h1 class="text-4xl md:text-7xl font-bold tracking-tight text-white leading-tight">
-                    Frontend <br>
+                    Jr. Frontend <br>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">
                         Developer
                     </span>

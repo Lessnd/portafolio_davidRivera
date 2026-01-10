@@ -6,3 +6,31 @@
 body {
     @apply bg-dark text-slate-200 font-sans;
 }
+
+/* Personalización de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Más delgada */
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+    /* Mismo color que tu bg-darker */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    /* Color gris sutil por defecto */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #06b6d4;
+    /* TU COLOR PRIMARY (Cyan) al pasar el mouse */
+}
+
+/* Soporte para Firefox (opcional, ya que usan otro estándar) */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #334155 #0f172a;
+}

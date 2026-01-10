@@ -21,12 +21,12 @@ const toggleMenu = () => isOpen.value = !isOpen.value;
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#inicio"
                             class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Inicio</a>
-                        <a href="#experiencia"
-                            class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Experiencia</a>
                         <a href="#proyectos"
                             class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Proyectos</a>
                         <a href="#habilidades"
                             class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Stack</a>
+                        <a href="#experiencia"
+                            class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Experiencia</a>
                         <a href="#contacto" 
                             class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Contacto</a>
                     </div>
@@ -46,10 +46,10 @@ const toggleMenu = () => isOpen.value = !isOpen.value;
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#inicio" @click="isOpen = false"
                     class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Inicio</a>
+                <a href="#proyectos" @click="isOpen = false"
+                    class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Proyectos</a>    
                 <a href="#experiencia" @click="isOpen = false"
                     class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Experiencia</a>
-                <a href="#proyectos" @click="isOpen = false"
-                    class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Proyectos</a>
                 <a href="#habilidades" @click="isOpen = false"
                     class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Stack Tecnológico</a>
                 <a href="#contacto" @click="isOpen = false" 

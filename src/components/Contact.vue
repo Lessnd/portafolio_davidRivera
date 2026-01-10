@@ -47,7 +47,7 @@ const contactInfo = [
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <a v-for="(item, index) in contactInfo" :key="index" :href="item.link" target="_blank"
                     rel="noopener noreferrer"
                     class="group bg-card border border-white/5 p-6 rounded-2xl hover:border-primary/30 hover:bg-white/5 transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center"

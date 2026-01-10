@@ -54,7 +54,7 @@ const projects = [
                         <div
                             class="absolute inset-0 bg-dark/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                             
-                            <a :href="project.repo" target="_blank"
+                            <a :href="project.repo" aria-label="Ver Código Fuente en GitHub" target="_blank"
                                 class="p-3 bg-white/10 rounded-full hover:bg-primary hover:text-darker transition-colors text-white backdrop-blur-sm"
                                 title="Ver Código">
                                 <Github :size="24" />

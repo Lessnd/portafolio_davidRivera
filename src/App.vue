@@ -19,8 +19,8 @@ import Skills from './components/Skills.vue'; // <--- Importar
     <footer class="py-8 bg-darker text-center text-slate-600 text-sm border-t border-slate-800/50">
       <p>&copy; 2026 David Rivera. Desarrollado con Vue 3 & Tailwind.</p>
       <div class="mt-2 flex justify-center gap-4 text-lg">
-        <a href="#" class="hover:text-primary transition-colors"><i class="bi bi-github"></i></a>
-        <a href="#" class="hover:text-primary transition-colors"><i class="bi bi-linkedin"></i></a>
+        <a aria-label="Visitar perfil de GitHub" href="#" class="hover:text-primary transition-colors"><i class="bi bi-github"></i></a>
+        <a aria-label="Visitar perfil de LinkedIn" href="#" class="hover:text-primary transition-colors"><i class="bi bi-linkedin"></i></a>
       </div>
     </footer>
   </div>

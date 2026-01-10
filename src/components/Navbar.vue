@@ -31,7 +31,7 @@ const toggleMenu = () => isOpen.value = !isOpen.value;
                 </div>
 
                 <div class="-mr-2 flex md:hidden">
-                    <button @click="toggleMenu" type="button"
+                    <button aria-label="Abrir menú de navegación" @click="toggleMenu" type="button"
                         class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none transition-colors">
                         <Menu v-if="!isOpen" :size="28" />
                         <X v-else :size="28" />

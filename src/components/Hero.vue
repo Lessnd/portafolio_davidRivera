@@ -73,7 +73,7 @@ onUnmounted(() => {
                         class="px-6 py-3 bg-primary text-darker font-bold rounded-lg hover:bg-cyan-400 transition-all shadow-[0_0_20px_rgba(56,189,248,0.3)] w-full sm:w-auto">
                         Ver Proyectos
                     </a>
-                    <a href="/assets/CV_David_Rivera.pdf" target="_blank" download
+                    <a href="/assets/CV_FrontendDev_DavidRIvera.pdf" target="_blank" download
                         class="px-6 py-3 border border-slate-700 rounded-lg hover:border-slate-500 hover:bg-slate-800/50 transition-all text-white w-full sm:w-auto">
                         Descargar CV
                     </a>

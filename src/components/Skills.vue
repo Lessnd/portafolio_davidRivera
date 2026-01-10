@@ -62,7 +62,7 @@ const skillCategories = [
 
             <div class="mb-12 md:mb-16 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
-                    <span class="text-primary">03.</span> Stack Técnico
+                    <span class="text-primary">02.</span> Stack Técnico
                 </h2>
                 <p class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base">
                     Arquitecturas escalables, código limpio y herramientas modernas.

@@ -27,7 +27,7 @@ const experience = [
 
             <div class="mb-12 text-center md:text-left">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
-                    <span class="text-primary">01.</span> Trayectoria
+                    <span class="text-primary">03.</span> Trayectoria
                 </h2>
                 <div class="h-1 w-20 bg-primary rounded-full mx-auto md:mx-0"></div>
             </div>

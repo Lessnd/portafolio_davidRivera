@@ -38,7 +38,7 @@ const projects = [
 
             <div class="mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
-                    <span class="text-primary">02.</span> Proyectos Destacados
+                    <span class="text-primary">01.</span> Proyectos Destacados
                 </h2>
                 <div class="h-1 w-20 bg-primary rounded-full"></div>
             </div>

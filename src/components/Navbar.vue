@@ -27,6 +27,8 @@ const toggleMenu = () => isOpen.value = !isOpen.value;
                             class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Proyectos</a>
                         <a href="#habilidades"
                             class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Stack</a>
+                        <a href="#contacto" 
+                            class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Contacto</a>
                     </div>
                 </div>
 
@@ -49,8 +51,9 @@ const toggleMenu = () => isOpen.value = !isOpen.value;
                 <a href="#proyectos" @click="isOpen = false"
                     class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Proyectos</a>
                 <a href="#habilidades" @click="isOpen = false"
-                    class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Stack
-                    Tecnológico</a>
+                    class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Stack Tecnológico</a>
+                <a href="#contacto" @click="isOpen = false" 
+                    class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Contacto</a>
             </div>
         </div>
     </nav>

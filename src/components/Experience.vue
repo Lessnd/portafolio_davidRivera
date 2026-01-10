@@ -8,13 +8,13 @@ const experience = [
     },
     {
         company: 'ISDEMU',
-        role: 'Soporte Técnico',
+        role: 'Soporte Técnico (Pasantía)',
         period: 'Sep 2025 - Dic 2025',
         desc: 'Diagnóstico de hardware/software y asistencia a usuarios. Mantenimiento de infraestructura TI garantizando continuidad operativa.'
     },
     {
         company: 'ITCA-FEPADE',
-        role: 'Desarrollador Móvil (Prácticas)',
+        role: 'Desarrollador Móvil (Prácticas Profesionales)',
         period: 'May 2025 - Oct 2025',
         desc: 'Desarrollo de aplicaciones móviles. Participación en el ciclo de vida completo del desarrollo de software.'
     }

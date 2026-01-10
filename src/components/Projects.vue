@@ -8,7 +8,7 @@ const projects = [
         desc: 'Plataforma web para gestión logística. Diseñé la interfaz en Figma y desarrollé componentes reactivos reutilizables para el dashboard de administración.',
         tech: ['Vue.js', 'Tailwind', 'Figma', 'API REST'],
         // CORRECCIÓN: Quitamos 'public' y el doble slash '//'
-        image: '/assets/img/project1.png', 
+        image: '/assets/img/project1.webp', 
         repo: 'https://github.com/Lessnd/MaxExpressAdmin_Frontend'
     },
     {
@@ -17,7 +17,7 @@ const projects = [
         desc: 'Colaborador en Aplicación móvil para gestión de productividad y control de horas. Implementación de arquitectura limpia y gestión de estado eficiente.',
         tech: ['Flutter', 'Dart', 'Mobile', 'Android'],
         // CORRECCIÓN: Quitamos 'public'
-        image: '/assets/img/project2.png',
+        image: '/assets/img/project2.webp',
         repo: 'https://github.com/Gerso1212121/EduEmotionsIA_ITCA'
     },
     {
@@ -26,7 +26,7 @@ const projects = [
         desc: 'Este portafolio. Desarrollado con el ecosistema moderno de Vue para demostrar performance, accesibilidad y diseño limpio.',
         tech: ['Vue 3', 'Vite', 'Tailwind CSS'],
         // CORRECCIÓN: Quitamos 'public'
-        image: '/assets/img/project3.png',
+        image: '/assets/img/project3.webp',
         repo: 'https://github.com/Lessnd/portafolio_davidRivera'
     }
 ]

@@ -98,7 +98,7 @@ onUnmounted(() => {
                 <div
                     class="relative bg-card border border-slate-700/50 rounded-2xl p-2 overflow-hidden shadow-2xl max-w-sm mx-auto md:max-w-none">
                     <div class="aspect-square bg-slate-900 rounded-xl flex items-center justify-center overflow-hidden">
-                        <img src="/assets/img/me.png" alt="David Rivera"
+                        <img src="/assets/img/me.webp" alt="David Rivera"
                             class="object-cover w-full h-full opacity-80 hover:scale-105 transition-transform duration-500">
                     </div>
                 </div>

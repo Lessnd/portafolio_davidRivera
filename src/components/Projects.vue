@@ -48,7 +48,7 @@ const projects = [
                     class="group bg-card rounded-xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl flex flex-col">
 
                     <div class="relative h-48 overflow-hidden bg-slate-800">
-                        <img :src="project.image" :alt="project.title"
+                        <img :src="project.image" :alt="project.title" loading="lazy"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90 group-hover:opacity-100">
 
                         <div

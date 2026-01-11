@@ -47,11 +47,11 @@ const toggleMenu = () => isOpen.value = !isOpen.value;
                 <a href="#inicio" @click="isOpen = false"
                     class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Inicio</a>
                 <a href="#proyectos" @click="isOpen = false"
-                    class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Proyectos</a>    
+                    class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Proyectos</a>  
+                <a href="#habilidades" @click="isOpen = false"
+                    class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Stack</a>
                 <a href="#experiencia" @click="isOpen = false"
                     class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Experiencia</a>
-                <a href="#habilidades" @click="isOpen = false"
-                    class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Stack Tecnológico</a>
                 <a href="#contacto" @click="isOpen = false" 
                     class="text-gray-300 hover:text-primary hover:bg-white/5 block px-3 py-4 rounded-md text-base font-medium transition-colors">Contacto</a>
             </div>

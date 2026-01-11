@@ -1796,11 +1796,11 @@ endobj
   /A <<
     /Type /Action
     /S /URI
-    /URI (https://davidrivera-dev.netlify.app/)
+    /URI (https://davidrivera-dev.vercel.app/)
   >>
   /F 4
   /StructParent 4
-  /Contents (https://davidrivera-dev.netlify.app/)
+  /Contents (https://davidrivera-dev.vercel.app/)
 >>
 endobj
 
@@ -1813,11 +1813,11 @@ endobj
   /A <<
     /Type /Action
     /S /URI
-    /URI (https://davidrivera-dev.netlify.app/)
+    /URI (https://davidrivera-dev.vercel.app/)
   >>
   /F 4
   /StructParent 5
-  /Contents (https://davidrivera-dev.netlify.app/)
+  /Contents (https://davidrivera-dev.vercel.app/)
 >>
 endobj
 
@@ -1951,8 +1951,8 @@ endobj
 136 0 obj
 <<
   /Creator (Typst 0.14.2)
-  /ModDate (D:20260110030859Z)
-  /CreationDate (D:20260110030859Z)
+  /ModDate (D:20260111013412Z)
+  /CreationDate (D:20260111013412Z)
 >>
 endobj
 
@@ -1963,7 +1963,7 @@ endobj
   /Subtype /XML
 >>
 stream
-<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="xmp-writer"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"  xmlns:xmp="http://ns.adobe.com/xap/1.0/"  xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"  xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/"  xmlns:pdf="http://ns.adobe.com/pdf/1.3/" ><xmp:CreatorTool>Typst 0.14.2</xmp:CreatorTool><dc:language><rdf:Bag><rdf:li>es</rdf:li></rdf:Bag></dc:language><xmp:ModifyDate>2026-01-10T03:08:59+00:00</xmp:ModifyDate><xmp:CreateDate>2026-01-10T03:08:59+00:00</xmp:CreateDate><xmpTPg:NPages>1</xmpTPg:NPages><dc:format>application/pdf</dc:format><xmpMM:InstanceID>+N3Ud4BqSy6f0rHHXCfrrQ==</xmpMM:InstanceID><xmpMM:DocumentID>+N3Ud4BqSy6f0rHHXCfrrQ==</xmpMM:DocumentID><xmpMM:RenditionClass>proof</xmpMM:RenditionClass><pdf:PDFVersion>1.7</pdf:PDFVersion></rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="r"?>
+<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="xmp-writer"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"  xmlns:xmp="http://ns.adobe.com/xap/1.0/"  xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"  xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/"  xmlns:pdf="http://ns.adobe.com/pdf/1.3/" ><xmp:CreatorTool>Typst 0.14.2</xmp:CreatorTool><dc:language><rdf:Bag><rdf:li>es</rdf:li></rdf:Bag></dc:language><xmp:ModifyDate>2026-01-11T01:34:12+00:00</xmp:ModifyDate><xmp:CreateDate>2026-01-11T01:34:12+00:00</xmp:CreateDate><xmpTPg:NPages>1</xmpTPg:NPages><dc:format>application/pdf</dc:format><xmpMM:InstanceID>OUwccCg88KKzjWPctjwl0Q==</xmpMM:InstanceID><xmpMM:DocumentID>OUwccCg88KKzjWPctjwl0Q==</xmpMM:DocumentID><xmpMM:RenditionClass>proof</xmpMM:RenditionClass><pdf:PDFVersion>1.7</pdf:PDFVersion></rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="r"?>
 endstream
 endobj
 
@@ -2115,23 +2115,23 @@ xref
 0000040426 00000 n
 0000040726 00000 n
 0000041026 00000 n
-0000041307 00000 n
-0000041588 00000 n
-0000041846 00000 n
-0000042104 00000 n
-0000042403 00000 n
-0000042702 00000 n
-0000043124 00000 n
-0000049093 00000 n
-0000049210 00000 n
-0000050296 00000 n
+0000041305 00000 n
+0000041584 00000 n
+0000041842 00000 n
+0000042100 00000 n
+0000042399 00000 n
+0000042698 00000 n
+0000043120 00000 n
+0000049089 00000 n
+0000049206 00000 n
+0000050292 00000 n
 trailer
 <<
   /Size 139
   /Root 138 0 R
   /Info 136 0 R
-  /ID [(+N3Ud4BqSy6f0rHHXCfrrQ==) (+N3Ud4BqSy6f0rHHXCfrrQ==)]
+  /ID [(OUwccCg88KKzjWPctjwl0Q==) (OUwccCg88KKzjWPctjwl0Q==)]
 >>
 startxref
-50515
+50511
 %%EOF

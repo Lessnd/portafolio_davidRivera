@@ -1,24 +1,28 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 
+// --- AQUÍ ESTÁ LA MAGIA DE LA OPCIÓN A ---
+// Importamos los iconos oficiales. Vite los compilará automáticamente.
+import IconVue from '~icons/logos/vue'
+import IconTailwind from '~icons/logos/tailwindcss-icon'
+import IconFlutter from '~icons/logos/flutter'
+import IconTypescript from '~icons/logos/typescript-icon'
+import IconLinux from '~icons/logos/linux-tux'
+import IconJavascript from '~icons/logos/javascript'
+
 const scrollPosition = ref(0);
 
 const handleScroll = () => {
-    // OPTIMIZACIÓN CRÍTICA:
-    // Si la pantalla es menor a 768px (móvil), forzamos la posición a 0.
-    // Esto desactiva el parallax y elimina el "tembleque" o saltos raros.
+    // Si es móvil (< 768px), anulamos el parallax para ganar rendimiento
     if (window.innerWidth < 768) {
         scrollPosition.value = 0;
         return;
     }
-
-    // En escritorio, guardamos la posición para el efecto
     scrollPosition.value = window.scrollY;
 };
 
 onMounted(() => {
     window.addEventListener('scroll', handleScroll);
-    // Agregamos resize por si el usuario gira el celular o cambia el tamaño de ventana
     window.addEventListener('resize', handleScroll);
 });
 
@@ -81,14 +85,41 @@ onUnmounted(() => {
 
                 <div class="pt-8 border-t border-slate-800/50 mt-8">
                     <p class="text-sm text-slate-500 mb-4 font-mono">STACK PRINCIPAL</p>
-                    <div class="flex gap-6 text-3xl text-slate-400 justify-center md:justify-start">
-                        <i class="devicon-vuejs-plain hover:text-green-400 transition-colors cursor-help" title="Vue.js"></i>
-                        <i class="devicon-tailwindcss-plain hover:text-cyan-400 transition-colors cursor-help" title="Tailwind CSS"></i>
-                        <i class="devicon-flutter-plain hover:text-blue-400 transition-colors cursor-help" title="Flutter"></i>
-                        <i class="devicon-typescript-plain hover:text-blue-600 transition-colors cursor-help" title="TypeScript"></i>
-                        <i class="devicon-linux-plain hover:text-yellow-500 transition-colors cursor-help" title="Linux User"></i>
+                    
+                    <div class="flex gap-6 justify-center md:justify-start items-center text-3xl">
+                        <IconVue 
+                            class="w-8 h-8 hover:-translate-y-1 transition-transform duration-300 cursor" 
+                            title="Vue.js" 
+                        />
+                        
+                        <IconTailwind 
+                            class="w-8 h-8 hover:-translate-y-1 transition-transform duration-300 cursor" 
+                            title="Tailwind CSS"
+                        />
+
+                        <IconJavascript 
+                            class="w-8 h-8 hover:-translate-y-1 transition-transform duration-300 cursor" 
+                            title="JavaScript" 
+                        />
+                        
+                        <IconTypescript 
+                            class="w-8 h-8 hover:-translate-y-1 transition-transform duration-300 cursor" 
+                            title="TypeScript"
+                        />
+                        
+                        <IconFlutter 
+                            class="w-8 h-8 hover:-translate-y-1 transition-transform duration-300 cursor" 
+                            title="Flutter"
+                        />
+                        
+                        <IconLinux 
+                            class="w-8 h-8 hover:-translate-y-1 transition-transform duration-300 cursor" 
+                            title="Linux"
+                        />
+
                     </div>
                 </div>
+
             </div>
 
             <div class="relative block group mb-8 md:mb-0 px-4 md:px-0 order-first md:order-2">

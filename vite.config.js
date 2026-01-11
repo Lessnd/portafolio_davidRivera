@@ -1,26 +1,26 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import Icons from 'unplugin-icons/vite'
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    Icons({ 
+      compiler: 'vue3',
+      autoInstall: true
+    }) 
+  ],
   build: {
-    // Minificación agresiva
     minify: 'terser',
     terserOptions: {
       compress: {
-        drop_console: true, // Borra los console.log en producción
+        drop_console: true,
         drop_debugger: true
       }
     },
     rollupOptions: {
       output: {
-        // Dividir librerías grandes en archivos separados (Vendor Chunking)
-        manualChunks(id) {
-          if (id.includes('node_modules')) {
-            // Separa Vue y otras librerías del código principal
-            return 'vendor';
-          }
-        }
+        manualChunks: undefined 
       }
     }
   }

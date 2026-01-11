@@ -73,7 +73,7 @@ onUnmounted(() => {
                         class="px-6 py-3 bg-primary text-darker font-bold rounded-lg hover:bg-cyan-400 transition-all shadow-[0_0_20px_rgba(56,189,248,0.3)] w-full sm:w-auto">
                         Ver Proyectos
                     </a>
-                    <a href="/assets/CV_FrontendDev_DavidRIvera.pdf" target="_blank" download
+                    <a href="/assets/CV_FrontendDev_DavidRivera.pdf" target="_blank" download
                         class="px-6 py-3 border border-slate-700 rounded-lg hover:border-slate-500 hover:bg-slate-800/50 transition-all text-white w-full sm:w-auto">
                         Descargar CV
                     </a>
@@ -98,7 +98,7 @@ onUnmounted(() => {
                 <div
                     class="relative bg-card border border-slate-700/50 rounded-2xl p-2 overflow-hidden shadow-2xl max-w-sm mx-auto md:max-w-none">
                     <div class="aspect-square bg-slate-900 rounded-xl flex items-center justify-center overflow-hidden">
-                        <img src="/assets/img/lessnd.webp" alt="David Rivera" fetchpriority="high"
+                        <img src="/assets/img/lessnd.webp" alt="David Rivera" width="400" height="400" fetchpriority="high"
                             class="object-cover w-full h-full opacity-80 hover:scale-105 transition-transform duration-500">
                     </div>
                 </div>

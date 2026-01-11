@@ -1,86 +1,85 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta name="description"
-    content="Portafolio de David Rivera - Desarrollador Frontend especializado en Vue.js, Flutter y Diseño UI/UX. Disponible para proyectos.">
-  <meta name="author" content="David Rivera">
-  <meta property="og:title" content="David Rivera | Frontend Developer">
-  <meta property="og:description" content="Especializado en Vue.js y Flutter. Mira mis proyectos y experiencia.">
-  <meta property="og:image" content="/assets/img/me.webp">
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  </noscript>
-  <link rel="preload" as="image" href="/assets/img/me.webp" type="image/webp" fetchpriority="high">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <title>David Rivera - Portafolio</title>
-</head>
-
-<body>
-  <div id="initial-loader" class="loader-container">
-    <div class="logo-wrapper">
-      <span class="bracket">&lt;</span>DR<span class="bracket">/&gt;</span>
-    </div>
-    <div class="progress-bar-wrapper">
-      <div class="progress-bar"></div>
-    </div>
-    <div class="status-text">Initializing...</div>
-  </div>
-
-  <div id="app"></div>
-
-  <style>
-    body, html { margin: 0; padding: 0; background-color: #0f172a; height: 100%; overflow: hidden; }
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio de David Rivera - Desarrollador Frontend Jr. Especialista en Vue.js y Rendimiento Web.">
     
-    .loader-container {
-      position: fixed; /* Asegura que tape todo */
-      top: 0; left: 0;
-      height: 100vh; width: 100vw;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
-      font-family: monospace;
-      z-index: 9999;
-      /* AQUÍ LA MAGIA: Transición suave de opacidad */
-      transition: opacity 0.5s ease-out, visibility 0.5s;
-    }
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    /* Clase que usaremos para ocultarlo */
-    .loader-fade-out {
-      opacity: 0;
-      visibility: hidden;
-    }
+    <link rel="preload" as="image" href="/assets/img/me.webp" type="image/webp" fetchpriority="high">
 
-    /* ... (Mantén los mismos estilos de logo y animaciones de antes) ... */
-    .logo-wrapper {
-      font-size: 3.5rem; font-weight: 800; color: #e2e8f0; letter-spacing: -2px; margin-bottom: 2rem;
-      animation: float 3s ease-in-out infinite;
-    }
-    .bracket { color: #06b6d4; }
-    .progress-bar-wrapper {
-      width: 200px; height: 4px; background: rgba(255, 255, 255, 0.1);
-      border-radius: 4px; overflow: hidden; position: relative;
-    }
-    .progress-bar {
-      position: absolute; top: 0; left: 0; height: 100%; width: 100%;
-      background: #06b6d4; transform: translateX(-100%);
-      animation: loading 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-      box-shadow: 0 0 15px #06b6d4;
-    }
-    .status-text {
-      margin-top: 1rem; font-size: 0.875rem; color: #64748b;
-      text-transform: uppercase; letter-spacing: 2px; animation: pulse 2s infinite;
-    }
-    @keyframes loading { 0% { transform: translateX(-100%); } 50% { transform: translateX(0%); } 100% { transform: translateX(100%); } }
-    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-    @keyframes pulse { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
-  </style>
-  
-  <script type="module" src="/src/main.js"></script>
-</body>
+    <style>
+      /* Bloqueamos scroll mientras carga */
+      body, html { margin: 0; padding: 0; background-color: #0f172a; overflow: hidden; height: 100%; }
+      
+      .loader-container {
+        position: fixed;
+        top: 0; left: 0;
+        height: 100vh; width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+        font-family: monospace;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out, visibility 0.5s;
+      }
+      
+      .loader-fade-out { opacity: 0; visibility: hidden; }
+
+      /* Estilos del Logo <DR/> */
+      .logo-wrapper {
+        font-size: 3.5rem; font-weight: 800; color: #e2e8f0;
+        letter-spacing: -2px; margin-bottom: 2rem;
+        animation: float 3s ease-in-out infinite;
+      }
+      .bracket { color: #06b6d4; } /* Cyan */
+
+      /* Barra de carga */
+      .progress-bar-wrapper {
+        width: 200px; height: 4px; background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px; overflow: hidden; position: relative;
+      }
+      .progress-bar {
+        position: absolute; top: 0; left: 0; height: 100%; width: 100%;
+        background: #06b6d4; transform: translateX(-100%);
+        animation: loading 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        box-shadow: 0 0 15px #06b6d4;
+      }
+      .status-text {
+        margin-top: 1rem; font-size: 0.875rem; color: #64748b;
+        text-transform: uppercase; letter-spacing: 2px; animation: pulse 2s infinite;
+      }
+
+      /* Animaciones */
+      @keyframes loading { 0% { transform: translateX(-100%); } 50% { transform: translateX(0%); } 100% { transform: translateX(100%); } }
+      @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+      @keyframes pulse { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    </noscript>
+
+    <title>David Rivera | Frontend Developer</title>
+  </head>
+
+  <body>
+    <div id="initial-loader" class="loader-container">
+      <div class="logo-wrapper">
+        <span class="bracket">&lt;</span>DR<span class="bracket">/&gt;</span>
+      </div>
+      <div class="progress-bar-wrapper">
+        <div class="progress-bar"></div>
+      </div>
+      <div class="status-text">Bienvenido...</div>
+    </div>
+
+    <div id="app"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

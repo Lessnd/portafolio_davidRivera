@@ -14,7 +14,7 @@ const contactInfo = [
         icon: Linkedin,
         title: 'LinkedIn',
         value: 'David Rivera',
-        link: 'https://www.linkedin.com/in/alessandrerivera/',
+        link: 'https://www.linkedin.com/in/alessandre-rivera/',
         action: 'Conectar',
         color: 'text-blue-400'
     },

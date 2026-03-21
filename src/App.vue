@@ -14,6 +14,8 @@ import Contact from './components/Contact.vue' // <--- IMPORTAR
       <Hero />
       <Projects />
       <Skills />
-      <Experience /> <Contact />    </main>
+      <Experience />
+      <Contact />
+    </main>
   </div>
 </template>
